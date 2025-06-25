@@ -44,7 +44,7 @@ jobs:
       # Task 3: Deploy to Cloud Run
       - name: Deploy to Cloud Run
         run: |
-           gcloud run deploy flask-app --region=us-central1 --source .
+           gcloud run deploy flask-app --region=us-central1 --allow-unauthenticated --source .
         
            
           # TODO: Deploy image to Cloud Run using gcloud run deploy
